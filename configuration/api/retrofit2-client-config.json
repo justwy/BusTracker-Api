@@ -1,0 +1,12 @@
+{
+    "library": "retrofit2",
+    "useRxJava2": false,
+    "hideGenerationTimestamp": true,
+    "developerName": "yinwang",
+    "developerEmail": "dev@treq.me",
+    "developerOrganization": "treq.me",
+    "invokerPackage": "me.treq.bustracker-api",
+    "modelPackage": "me.treq.bustracker-api.data.entity",
+    "apiPackage": "me.treq.bustracker-api.data.api",
+    "artifactId": "swagger-bustracker-retrofit2"
+}
