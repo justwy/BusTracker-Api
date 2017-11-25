@@ -140,7 +140,7 @@ definitions:
     required:
     - routeId
     - routeDescription
-    - polylineArray
+    - busLines
     properties:
       routeId:
         type: string
@@ -148,12 +148,12 @@ definitions:
       routeDescription:
         type: string
         example: "34 st"
-      polylineArray:
+      busLines:
         type: array
         minItems: 0
         uniqueItems: true
         items:
-          $ref: "#/definitions/Location"
+          $ref: "#/definitions/BusLine"
       routeViewCenter:
         $ref: '#/definitions/Location'
       routeSpanLatitude:
@@ -164,3 +164,22 @@ definitions:
         type: number
         format: double
         example: -41.654788
+  BusLine:
+    required:
+    - id
+    - description
+    - polyline
+    properties:
+      id:
+        type: number
+        format: long
+        example: 1
+      description:
+        type: string
+        example: "Bus line No. 1"
+      polyline:
+        type: array
+        minItems: 0
+        uniqueItems: true
+        items:
+          $ref: '#/definitions/Location'
